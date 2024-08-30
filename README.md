@@ -4,7 +4,7 @@
 ![NumPy Badge](https://img.shields.io/badge/NumPy-000?logo=numpy&logoColor=013243&style=for-the-badge)
 
 # Bat-Motion-Detection
-Motion detection in DAV files using OpenCV, clip extraction in MP4
+Motion detection in security camera DAV files using OpenCV, with MP4 clip extraction
 
 ## 🗂️ Table of Contents
 - [About](#-about)
@@ -47,16 +47,16 @@ def motion_detection(video_path, output_dir):
       elif motion_start is not None:
         ...
         if motion_duration >= 0.5:
-        #                  ^^^^^^ movement for half a second or longer
+        #                  ^^^^^^ Movement for half a second or longer
 ```
 - The FFmpeg subprocess call can be adjusted to save the video clips in a different format, currently they are set to save MP4 files.
 - The subprocess call can also be adjusted to capture more/less footage when motion is detected. By default, it will capture 1 second before and after motion is detected:
 ```python
           ...
           "-ss", f"{motion_start-1:.2f}",
-          #         ^^^^^^^^^^^^^^ capture 1 second before
+          #         ^^^^^^^^^^^^^^ Capture 1 second before
           "-to", f"{motion_end+1:.2f}",
-          #         ^^^^^^^^^^^^^^ capture 1 second after
+          #         ^^^^^^^^^^^^^^ Capture 1 second after
 ```
 - The program is set to look for DAV files in the same directory it is in, but both the file type and the directory can be adjusted:
 ```python
