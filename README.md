@@ -1,7 +1,7 @@
 <a name="top"></a>
 ![Python Badge](https://img.shields.io/badge/python-000?logo=python&logoColor=ffdd54&style=for-the-badge)
 ![OpenCV Badge](https://img.shields.io/badge/OpenCV-000?logo=opencv&logoColor=5C3EE8&style=for-the-badge)
-![NumPy Badge](https://img.shields.io/badge/NumPy-000?logo=numpy&logoColor=013243&style=for-the-badge)
+[//]: # ![NumPy Badge](https://img.shields.io/badge/NumPy-000?logo=numpy&logoColor=013243&style=for-the-badge)
 
 # Bat-Motion-Detection
 Motion detection in security camera DAV files using OpenCV, with MP4 clip extraction
